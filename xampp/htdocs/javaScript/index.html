@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My JavaScript</title>
-</head>
-<body>
-    <Script>
-        var date = new Date();
-        document.body.innerHTML = "<h1>I'm starting JavaScript on " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear() + "</h1>";
-    </Script>
-</body>
+    <!-- **** HEAD (1 : 1 way of Scripting language by DEFERRED loading) **** 
+    <script src="./script.js" defer></script>
+     -->
+  </head>
+
+  <body>
+    <!--  **** BODY (2 : 1 way of Scripting JavaScript) ****     
+    <script>
+      var date = new Date();
+      document.body.innerHTML = "<h1>I'm starting JavaScript on " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear() + "</h1>";
+    </script> -->
+
+    <!--  **** BODY (2 : 2 way of Scripting JavaScript) ****     
+    <script src="./script.js"></script> -->
+  </body>
+
+  <!--  **** FOOTER (3 : 1 way of Scripting JavaScript) ****     
+    <script>
+      var date = new Date();
+      document.body.innerHTML = "<h1>I'm starting JavaScript on " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear() + "</h1>";
+    </script> -->
+
+  <!--  **** FOOTER (3 : 2 way of Scripting JavaScript) ****     
+    <script src="./script.js"></script> -->
 </html>
