@@ -18,3 +18,18 @@ if(CTA.hasAttribute("target")){
     CTA.setAttribute("target", "_blank");
 }
 console.log(CTA.attributes);
+
+
+
+// Adding new fig caption to image 
+//  usable functions : 
+//  createElement() for creating Element
+//  createTextNode() for creating  text Node
+//  appendClild() for placing one child node inside another
+const FEATURED = document.querySelector(".image-fig");
+const THEIMAGE = FEATURED.querySelector("img");
+var altText = THEIMAGE.getAttribute("alt");
+var captionElement = document.createElement("figCaption");
+captionElement.append(altText);
+FEATURED.append(captionElement);
+THEIMAGE.setAttribute("alt", "");
