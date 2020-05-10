@@ -33,3 +33,10 @@ var captionElement = document.createElement("figCaption");
 captionElement.append(altText);
 FEATURED.append(captionElement);
 THEIMAGE.setAttribute("alt", "");
+
+// Apply iline CSS
+document.querySelector(".text h1").style.color = "red";
+document.querySelector(".text h1").style.backgroundColor = "black";
+document.querySelector(".text h2").style.cssText = "color: yellow; background-color: red; padding: 1em;";
+document.querySelector(".text h3").setAttribute("style", "color: orange; background-color: purple; font-size: 3rem");
+// Inline CSS is opinionated. so best practice is to create custom CSS file thenuse JS to manage those
