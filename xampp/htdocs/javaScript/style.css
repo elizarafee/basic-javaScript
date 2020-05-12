@@ -1,0 +1,8 @@
+.hide {
+    height: 0;
+    overflow: hidden;
+}
+
+.x {
+    background-color: tomato;
+}
