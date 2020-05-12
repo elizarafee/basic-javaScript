@@ -58,5 +58,9 @@ function reveal(e){
     B.classList.toggle("hide");
 }
 
-A.onclick = reveal;
-B.onclick = reveal;
+// A.onclick = reveal;
+// B.onclick = reveal;
+
+// Event handler work fine if we're only triggering functions based on DOM level events and then only trigger a single functions; so we'll use event listener.
+A.addEventListener("click", reveal, false);  // not clear about the use of false
+B.addEventListener("click", function(){console.log("CHANGED!!!");}, false);
